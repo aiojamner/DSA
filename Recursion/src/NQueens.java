@@ -40,7 +40,6 @@ public class NQueens {
 
         return true;
 
-
     }
 
     public static void printBoard(char[][] board){
