@@ -6,7 +6,7 @@ public class InsertionSort {
 
     public static void main(String[] args) {
         int[] arr = {6,5,4,3,2,1};
-
+        long time1 = System.currentTimeMillis();
         System.out.println("*********** Insertion Sort ************");
         System.out.println("Unsorted Array -> "+Arrays.toString(arr));
         for (int i = 1;i< arr.length;i++){
@@ -22,5 +22,7 @@ public class InsertionSort {
         }
 
         System.out.println("Sorted Array -> "+Arrays.toString(arr));
+        System.out.println("Time taken to complete : "+(System.currentTimeMillis() - time1));
+
     }
 }

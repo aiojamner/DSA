@@ -1,5 +1,6 @@
 package sorts;
 
+import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.Collections;
@@ -35,6 +36,8 @@ public class InsertionSortList {
     public static void main(String[] args) {
         ListNode l1 = new ListNode(3, new ListNode(10, new ListNode(17,new ListNode(12,new ListNode(8)))));
 
+        long time1 = System.currentTimeMillis();
+
         System.out.println("*********** Insertion Sort List ************");
         System.out.println("List Without Sort");
         printList(l1);
@@ -43,5 +46,7 @@ public class InsertionSortList {
 
         System.out.println("List With Sort");
         printList(l1);
+
+        System.out.println("Time Complexity : "+(System.currentTimeMillis() - time1));
     }
 }
