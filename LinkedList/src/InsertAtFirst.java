@@ -38,6 +38,9 @@ public class InsertAtFirst {
         public static void main(String[] args) {
             LinkNode linkNode = new LinkNode(8, new LinkNode(12, new LinkNode(15, new LinkNode(19))));
 
+            System.out.println("************* Insert Node At First **************");
+
+
             System.out.println("Before adding node LinkedList :");
             printList(linkNode);
 
